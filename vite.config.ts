@@ -18,6 +18,11 @@ export default defineConfig({
       input: {
         main: "index.html",
       },
+      output: {
+        entryFileNames: "[name].js",
+        chunkFileNames: "[name].js",
+        assetFileNames: "[name].[ext]",
+      },
     },
     // Ensure we get a single CSS file
     cssCodeSplit: false,
