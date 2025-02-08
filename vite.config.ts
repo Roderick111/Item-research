@@ -19,6 +19,14 @@ export default defineConfig({
         main: "index.html",
       },
     },
+    // Ensure we get a single CSS file
+    cssCodeSplit: false,
+    // Make sure assets are copied
+    copyPublicDir: true,
+    // Generate source maps
+    sourcemap: false,
+    // Minify the output
+    minify: true,
   },
   base:
     process.env.NODE_ENV === "development"
